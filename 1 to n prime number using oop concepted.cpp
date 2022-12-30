@@ -1,20 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+class prime
 {
     int n,i,j;
-    cin>>n;
-    for ( i=2; i<=n; i++)
+public:
+    void display()
     {
-        for ( j=2; j<i; j++)
+        cin>>n;
+        for ( i=2; i<=n; i++)
         {
-
-            if (i%j !=0)
+            int c=0;
+            for ( j=2; j<i; j++)
             {
-
+                if (i%j ==0)
+                {
+                    c++;
+                    break;
+                }
+            }
+            if (c==0 && n != 1)
+            {
                 cout<<i<<endl;
             }
         }
     }
+};
+
+int main()
+{
+    prime obj;
+    obj.display();
 
 }

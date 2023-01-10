@@ -2,23 +2,23 @@
 using namespace std;
 class prime
 {
-    int n,i,j;
-public:
+    int n,i;
+    public:
     void display()
     {
         cin>>n;
-        for ( i=2; i<=n; i++)
+        for(i=2; i<=n; i++)
         {
             int c=0;
-            for ( j=2; j<i; j++)
+            for(int j=2; j<n; j++)
             {
-                if (i%j ==0)
+                if(i%j==0)
                 {
                     c++;
-                    //break;
+                    break;
                 }
             }
-            if (c==0 && n != 1)
+            if(c==0 && n==1)
             {
                 cout<<i<<endl;
             }
@@ -28,7 +28,6 @@ public:
 
 int main()
 {
-    prime obj;
-    obj.display();
-
+    prime p;
+    p.display();
 }

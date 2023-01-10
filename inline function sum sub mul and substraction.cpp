@@ -6,12 +6,10 @@ inline int sum(int a, int b)
 }
 inline int sub(int a,int b)
 {
-
     return (a-b);
 }
 inline double div(double c, double d)
 {
-
     return (c/d);
 }
 inline double mul(double c, double d)

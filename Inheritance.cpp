@@ -21,7 +21,6 @@ public:
         display();
     }
 };
-
 int main ()
 {
     student p;
@@ -29,6 +28,5 @@ int main ()
     p.id = 1024;
     p.age = 22;
     p.display2();
-
     return 0;
 }

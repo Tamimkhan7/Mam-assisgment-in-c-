@@ -27,6 +27,4 @@ int main ()
     int n;
     cin>>n;
     even_odd(n);
-
-
 }

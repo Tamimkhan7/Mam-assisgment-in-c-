@@ -10,7 +10,7 @@ class prime
         for(i=2; i<=n; i++)
         {
             int c=0;
-            for(int j=2; j<n; j++)
+            for(int j=2; j<i; j++)
             {
                 if(i%j==0)
                 {
@@ -18,7 +18,7 @@ class prime
                     break;
                 }
             }
-            if(c==0 && n==1)
+            if(c==0 && n !=1)
             {
                 cout<<i<<endl;
             }
